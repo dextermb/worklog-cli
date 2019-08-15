@@ -1,0 +1,43 @@
+{
+  "name": "worklog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "conf": "^5.0.0",
+    "lowdb": "^1.0.0",
+    "pretty-error": "^2.1.1",
+    "yargs": "^13.3.0"
+  },
+  "devDependencies": {
+    "husky": "^3.0.3",
+    "standard": "^13.1.0"
+  },
+  "scripts": {
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "npm run lint"
+      ]
+    }
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dextermb/worklog-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dextermb/worklog-cli/issues"
+  },
+  "homepage": "https://github.com/dextermb/worklog-cli#readme"
+}
